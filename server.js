@@ -21,6 +21,7 @@ mongoose
   });
 
 const job = schedule.scheduleJob('*/14 * * * *', async () => {
+  console.log('yo');
   try {
     const response = await axios.get(REQ_URL);
     if (response.status === 200) {
